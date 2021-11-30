@@ -1,0 +1,39 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+       double A, B, C,x1,x2,delta;
+            
+            string[] lista1 = Console.ReadLine().Split(' ');
+            A = Convert.ToDouble(lista1[0]);
+            B = Convert.ToDouble(lista1[1]);
+            C = Convert.ToDouble(lista1[2]);
+
+            delta = (B * B) + (-4 * A * C);
+
+            if (A <= 0)
+            {
+                Console.WriteLine("Impossivel calcular");
+            }
+            else if (delta <= 0)
+            {
+                Console.WriteLine("Impossivel calcular");
+            }
+            else
+            {
+                delta = (B * B) + (-4 * A * C);
+                
+
+                x1 = (-B + Math.Sqrt(delta)) / (2 * A);
+                x2 = (-B - Math.Sqrt(delta)) / (2 * A);
+
+                
+                Console.WriteLine("R1 = {0:0.00000}", x1);
+                Console.WriteLine("R2 = {0:0.00000}", x2);
+            }
+
+    }
+
+}
