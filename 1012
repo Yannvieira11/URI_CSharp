@@ -1,0 +1,28 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+       double A, B, C, tri, cir, tra, qua, ret;
+
+            string[] lista1 = Console.ReadLine().Split(' ');
+            A = Convert.ToDouble(lista1[0]);
+            B = Convert.ToDouble(lista1[1]);
+            C = Convert.ToDouble(lista1[2]);
+
+            tri = (A * C) / 2;
+            cir = 3.14159 * C * C;
+            tra = (A + B) * C / 2;
+            qua = (B * B);
+            ret = (A * B);
+
+            Console.WriteLine("TRIANGULO: {0:0.000}", tri);
+            Console.WriteLine("CIRCULO: {0:0.000}", cir);
+            Console.WriteLine("TRAPEZIO: {0:0.000}", tra);
+            Console.WriteLine("QUADRADO: {0:0.000}", qua);
+            Console.WriteLine("RETANGULO: {0:0.000}", ret);
+
+    }
+
+}
