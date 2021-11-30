@@ -1,0 +1,46 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+       int COD, QUA;
+            double dog, salada, bacon, torrada, refri,a;
+            dog = 4.00;
+            salada = 4.50;
+            bacon = 5.00;
+            torrada = 2.00;
+            refri = 1.50;
+            
+            string[] lista1 = Console.ReadLine().Split(' ');
+            COD = Convert.ToInt32(lista1[0]);
+            QUA = Convert.ToInt32(lista1[1]);
+            if (COD == 1)
+            {
+               a = QUA * dog;
+                Console.WriteLine("Total: R$ {0:0.00}", a);
+            }
+            else if (COD == 2)
+            {
+               a = QUA * salada;
+                Console.WriteLine("Total: R$ {0:0.00}", a);
+            }
+            else if (COD == 3)
+            {
+                a = QUA * bacon;
+                Console.WriteLine("Total: R$ {0:0.00}", a);
+            }
+            else if (COD == 4)
+            {
+                a = QUA * torrada;
+                Console.WriteLine("Total: R$ {0:0.00}", a);
+            }
+            else if (COD == 5)
+            {
+                a = QUA * refri;
+                Console.WriteLine("Total: R$ {0:0.00}", a);
+            }
+
+    }
+
+}
