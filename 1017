@@ -1,0 +1,20 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+        
+            double T,K,V;
+            
+            
+            T= Convert.ToDouble(Console.ReadLine());
+            K = Convert.ToDouble(Console.ReadLine());
+
+            V = K * T / 12;
+
+            Console.WriteLine("{0:0.000}",V);
+
+    }
+
+}
