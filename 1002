@@ -1,0 +1,20 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+        double RAIO,N,AREA;
+            N = 3.14159;
+            
+            RAIO = Convert.ToDouble(Console.ReadLine());
+
+            AREA = N * (RAIO * RAIO);
+            
+            
+            Console.WriteLine("A={0:0.0000}",AREA);
+
+
+    }
+
+}
