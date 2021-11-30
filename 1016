@@ -1,0 +1,17 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+         int T,Z;
+            
+            
+            Z= Convert.ToInt32(Console.ReadLine());
+
+            T = (60 * Z) / 30;
+
+            Console.WriteLine("{0} minutos",T);
+    }
+
+}
