@@ -1,0 +1,26 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+         double A,B;
+            string[] lista1 = Console.ReadLine().Split(' ');
+            A = Convert.ToDouble(lista1[0]);
+            B = Convert.ToDouble(lista1[1]);
+            
+            if (B % A == 0)
+            {
+                Console.WriteLine("Sao Multiplos");
+            }
+            else if (A % B == 0)
+            {
+                Console.WriteLine("Sao Multiplos");
+            }
+            else
+            {
+                Console.WriteLine("Nao sao Multiplos");
+            }
+    }
+
+}
