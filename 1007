@@ -1,0 +1,21 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+        double A,B,C,D,DIFERENCA;
+            A = Convert.ToDouble(Console.ReadLine());
+            B = Convert.ToDouble(Console.ReadLine());
+            C = Convert.ToDouble(Console.ReadLine());
+            D = Convert.ToDouble(Console.ReadLine());
+
+            DIFERENCA = (A * B - C * D);
+
+
+            Console.WriteLine("DIFERENCA = " + DIFERENCA);
+
+
+    }
+
+}
