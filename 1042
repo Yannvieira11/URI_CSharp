@@ -1,0 +1,59 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+          double A,B,C;
+            string[] lista1 = Console.ReadLine().Split(' ');
+            A = Convert.ToDouble(lista1[0]);
+            B = Convert.ToDouble(lista1[1]);
+            C = Convert.ToDouble(lista1[2]);
+
+            if (A < B && A < C && B < C)
+            {
+                Console.WriteLine(A);
+                Console.WriteLine(B);
+                Console.WriteLine(C);
+            }
+            else if (A < B && A < C && B > C)
+            {
+                Console.WriteLine(A);
+                Console.WriteLine(C);
+                Console.WriteLine(B);
+            }
+            else if (A > B && B < C && A < C)
+            {
+                Console.WriteLine(B);
+                Console.WriteLine(A);
+                Console.WriteLine(C);
+            }
+            else if (A > B && B < C && A > C)
+            {
+                Console.WriteLine(B);
+                Console.WriteLine(C);
+                Console.WriteLine(A);
+            }
+            else if (A < C && B > C && A > C)
+            {
+                Console.WriteLine(C);
+                Console.WriteLine(A);
+                Console.WriteLine(B);
+            }
+            else if (A > B && B > C && A > C)
+            {
+                Console.WriteLine(C);
+                Console.WriteLine(B);
+                Console.WriteLine(A);
+            }
+            else
+            {
+            }
+            Console.WriteLine("");
+            Console.WriteLine(A);
+            Console.WriteLine(B);
+            Console.WriteLine(C);
+
+    }
+
+}
