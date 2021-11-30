@@ -1,0 +1,22 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+        string NOME;
+            double SALARIO, MONTANTE,TOTAL;
+
+
+
+            NOME = (Console.ReadLine());
+            SALARIO = Convert.ToDouble(Console.ReadLine());
+            MONTANTE = Convert.ToDouble(Console.ReadLine());
+
+
+            TOTAL = SALARIO + (MONTANTE * 0.15);
+            Console.WriteLine("TOTAL = R$ {0:0.00}",TOTAL);
+
+    }
+
+}
