@@ -1,0 +1,22 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+        string[] lista1 = Console.ReadLine().Split(' ');
+            string[] lista2 = Console.ReadLine().Split(' ');
+
+            int Q1 = Convert.ToInt32(lista1[1]);
+            double V1 = Convert.ToDouble(lista1[2]);
+            int Q2 = Convert.ToInt32(lista2[1]);
+            double V2 = Convert.ToDouble(lista2[2]);
+            double TOTAL = (Q1 * V1) + (Q2 * V2);
+
+
+
+            Console.WriteLine("VALOR A PAGAR: R$ {0:0.00}", TOTAL);
+
+    }
+
+}
