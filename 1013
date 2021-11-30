@@ -1,0 +1,20 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+                    double A, B, C, MAIORAB, MAIORABC;
+
+            string[] lista1 = Console.ReadLine().Split(' ');
+            A = Convert.ToDouble(lista1[0]);
+            B = Convert.ToDouble(lista1[1]);
+            C = Convert.ToDouble(lista1[2]);
+
+            MAIORAB = (A + B + Math.Abs(A-B)) / 2;
+            MAIORABC = (MAIORAB + C + Math.Abs(MAIORAB - C))/ 2;
+            Console.WriteLine("{0} eh o maior", MAIORABC);
+
+    }
+
+}
