@@ -1,0 +1,22 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+        int N,x,y,z;
+            
+            N = Convert.ToInt32(Console.ReadLine());
+
+            
+            
+             x = N / 365; y = N % 365 / 30; z = N % 365 % 30;
+            
+
+            Console.WriteLine(x + " ano(s)");
+            Console.WriteLine(y + " mes(es)");
+            Console.WriteLine(z + " dia(s)");
+
+    }
+
+}
