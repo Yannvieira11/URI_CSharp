@@ -1,0 +1,26 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+        double x1,y1,x2,y2,distancia,con;
+
+            string[] lista1 = Console.ReadLine().Split(' ');
+           
+            x1 = Convert.ToDouble(lista1[0]);
+            y1 = Convert.ToDouble(lista1[1]);
+
+            string[] lista2 = Console.ReadLine().Split(' ');
+
+            x2 = Convert.ToDouble(lista2[0]);
+            y2 = Convert.ToDouble(lista2[1]);
+
+            con = (x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1);
+
+            distancia = Math.Sqrt(con);
+            Console.WriteLine("{0:0.0000}",distancia);
+
+    }
+
+}
